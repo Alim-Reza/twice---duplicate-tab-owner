@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Twice – Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --fg: #0f172a; --muted: #475569; --bg: #ffffff; --line: #e2e8f0; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #f1f5f9; --muted: #94a3b8; --bg: #0f172a; --line: #1e293b; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 18px; margin: 32px 0 8px; }
+    .muted { color: var(--muted); }
+    .summary { border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin-top: 24px; }
+    code { font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Twice – Duplicate Tab Blocker</h1>
+  <p class="muted">Privacy Policy · Last updated 10 November 2026</p>
+
+  <div class="summary">
+    <strong>In short:</strong> Twice does not collect, store on any server, sell, or share any data.
+    It has no analytics, no ads and no tracking. Everything it does happens inside your own browser.
+  </div>
+
+  <h2>What the extension accesses, and why</h2>
+  <p>To notice that you are opening a page that is already open, Twice compares the address (URL) of a
+    new tab with the addresses of the tabs you already have open. This comparison happens entirely on your
+    device, in the moment. Addresses are never written to a log, kept as browsing history, or sent anywhere.</p>
+  <p>To ask "You already have this tab open. Open it again?", Twice briefly shows a small dialog on top of the
+    page you already had open. It does not read or change the content of the page.</p>
+
+  <h2>What is stored, and where</h2>
+  <ul>
+    <li><strong>Your settings</strong> (whether Twice is on, and the list of sites you told it to ignore) are kept
+      in your browser's local extension storage (<code>chrome.storage.local</code>) on your device.</li>
+    <li><strong>Temporary state</strong>: the question currently on screen, and the list of tabs you closed with
+      "Scan &amp; close duplicates" so that Undo works for 10 minutes. This is kept in
+      <code>chrome.storage.session</code>, which lives in memory and is cleared when the browser closes.</li>
+  </ul>
+  <p>Nothing is synced to your Google account, and nothing is sent to the developer or any third party.
+    Removing the extension deletes all of it.</p>
+
+  <h2>Network access</h2>
+  <p>Twice makes no network requests of its own: it does not load remote code, contact servers, or
+    "phone home".</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>tabs</strong>: to read the addresses of open tabs and switch to the one you already have.</li>
+    <li><strong>webNavigation</strong>: to notice when a new tab finishes going to a page, including after redirects.</li>
+    <li><strong>scripting</strong> and <strong>access to all sites</strong>: to show the "already open" dialog on whichever page
+      you already have open. The dialog can appear on any site, so the permission covers all sites.</li>
+    <li><strong>storage</strong>: to remember your settings on your device.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Twice collects no personal information from anyone, including children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy ever changes, the new version will be posted on this page with a new date.
+    Any change that would involve collecting data would require your consent first.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Open an issue at
+    <a href="https://github.com/Alim-Reza/twice---duplicate-tab-owner/issues">github.com/Alim-Reza/twice---duplicate-tab-owner/issues</a>.</p>
+</main>
+</body>
+</html>
